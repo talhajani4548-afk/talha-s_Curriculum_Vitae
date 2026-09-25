@@ -39,7 +39,9 @@
             overflow: hidden;
         }
 
-        /* SIDEBAR */
+        /* =========================
+           SIDEBAR
+        ========================== */
 
         .sidebar {
             background: #172a3a;
@@ -90,6 +92,8 @@
             margin-bottom: 10px;
         }
 
+        /* CONTACT */
+
         .contact-item {
             margin-bottom: 9px;
             word-break: break-word;
@@ -118,40 +122,32 @@
             color: #5cc8ff;
         }
 
-        .sidebar ul {
+        /* TECHNICAL SKILLS */
+
+        .skills-list {
             list-style: none;
             padding: 0;
         }
 
-        .sidebar li {
-            margin-bottom: 7px;
+        .skills-list li {
+            position: relative;
+            padding-left: 14px;
+            margin-bottom: 8px;
             font-size: 9.5px;
             color: #e6edf2;
         }
 
-        .skill {
-            margin-bottom: 10px;
+        .skills-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #5cc8ff;
+            font-size: 15px;
+            line-height: 1;
         }
 
-        .skill-name {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 4px;
-            font-size: 9px;
-        }
-
-        .skill-bar {
-            height: 4px;
-            background: rgba(255,255,255,0.15);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .skill-fill {
-            height: 100%;
-            background: #5cc8ff;
-            border-radius: 10px;
-        }
+        /* LANGUAGES */
 
         .language {
             display: flex;
@@ -164,7 +160,22 @@
             color: #9fb2c2;
         }
 
-        /* MAIN CONTENT */
+        /* CORE STRENGTHS */
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 7px;
+            font-size: 9.5px;
+            color: #e6edf2;
+        }
+
+        /* =========================
+           MAIN CONTENT
+        ========================== */
 
         .main {
             padding: 30px 30px 25px;
@@ -364,7 +375,6 @@
             }
 
             .sidebar,
-            .skill-fill,
             .certification {
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
@@ -400,34 +410,52 @@
 
 <div class="page">
 
-    <!-- SIDEBAR -->
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
 
     <aside class="sidebar">
 
         <div class="profile-wrapper">
+
             <img src="profile.jpeg"
                  alt="Talha Ahmad"
                  class="profile-img">
 
-            <div class="sidebar-name">Talha Ahmad</div>
-            <div class="sidebar-role">Mechanical Engineering Student</div>
+            <div class="sidebar-name">
+                Talha Ahmad
+            </div>
+
+            <div class="sidebar-role">
+                Mechanical Engineering Student
+            </div>
+
         </div>
 
 
         <!-- CONTACT -->
 
         <div class="sidebar-section">
-            <div class="sidebar-title">Contact</div>
+
+            <div class="sidebar-title">
+                Contact
+            </div>
 
             <div class="contact-item">
-                <span class="contact-label">Phone</span>
+                <span class="contact-label">
+                    Phone
+                </span>
+
                 <span class="contact-value">
                     +92 319 4500405
                 </span>
             </div>
 
             <div class="contact-item">
-                <span class="contact-label">Email</span>
+                <span class="contact-label">
+                    Email
+                </span>
+
                 <span class="contact-value">
                     <a href="mailto:talhajani4548@gmail.com">
                         talhajani4548@gmail.com
@@ -436,7 +464,10 @@
             </div>
 
             <div class="contact-item">
-                <span class="contact-label">LinkedIn</span>
+                <span class="contact-label">
+                    LinkedIn
+                </span>
+
                 <span class="contact-value">
                     <a href="https://www.linkedin.com/in/talha-ahmad-315b00309"
                        target="_blank">
@@ -446,132 +477,126 @@
             </div>
 
             <div class="contact-item">
-                <span class="contact-label">Location</span>
+                <span class="contact-label">
+                    Location
+                </span>
+
                 <span class="contact-value">
                     Gulbahar Colony, P/O & Tehsil Rustam,
                     District Mardan, KPK
                 </span>
             </div>
+
         </div>
 
 
         <!-- TECHNICAL SKILLS -->
 
         <div class="sidebar-section">
-            <div class="sidebar-title">Technical Skills</div>
 
-            <div class="skill">
-                <div class="skill-name">
-                    <span>AutoCAD</span>
-                    <span>85%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:85%"></div>
-                </div>
+            <div class="sidebar-title">
+                Technical Skills
             </div>
 
-            <div class="skill">
-                <div class="skill-name">
-                    <span>C++ Programming</span>
-                    <span>80%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:80%"></div>
-                </div>
-            </div>
+            <ul class="skills-list">
 
-            <div class="skill">
-                <div class="skill-name">
-                    <span>MS Office</span>
-                    <span>90%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:90%"></div>
-                </div>
-            </div>
+                <li>AutoCAD</li>
 
-            <div class="skill">
-                <div class="skill-name">
-                    <span>Electrical Systems</span>
-                    <span>75%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:75%"></div>
-                </div>
-            </div>
+                <li>PTC Creo</li>
 
-            <div class="skill">
-                <div class="skill-name">
-                    <span>Communication</span>
-                    <span>90%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:90%"></div>
-                </div>
-            </div>
+                <li>C++ Programming</li>
 
-            <div class="skill">
-                <div class="skill-name">
-                    <span>Teaching</span>
-                    <span>90%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:90%"></div>
-                </div>
-            </div>
+                <li>MS Office</li>
+
+                <li>Electrical Systems</li>
+
+                <li>Engineering Drawing</li>
+
+                <li>Technical Communication</li>
+
+                <li>Teaching & Mentoring</li>
+
+            </ul>
+
         </div>
 
 
         <!-- LANGUAGES -->
 
         <div class="sidebar-section">
-            <div class="sidebar-title">Languages</div>
+
+            <div class="sidebar-title">
+                Languages
+            </div>
 
             <div class="language">
                 <span>English</span>
-                <span class="language-level">Proficient</span>
+                <span class="language-level">
+                    Proficient
+                </span>
             </div>
 
             <div class="language">
                 <span>Urdu</span>
-                <span class="language-level">Fluent</span>
+                <span class="language-level">
+                    Fluent
+                </span>
             </div>
 
             <div class="language">
                 <span>Pashto</span>
-                <span class="language-level">Native</span>
+                <span class="language-level">
+                    Native
+                </span>
             </div>
+
         </div>
 
 
         <!-- CORE STRENGTHS -->
 
         <div class="sidebar-section">
-            <div class="sidebar-title">Core Strengths</div>
+
+            <div class="sidebar-title">
+                Core Strengths
+            </div>
 
             <ul>
+
                 <li>• Problem Solving</li>
+
                 <li>• Adaptability</li>
+
                 <li>• Technical Learning</li>
+
                 <li>• Team Communication</li>
+
                 <li>• Attention to Detail</li>
+
             </ul>
+
         </div>
 
     </aside>
 
 
-    <!-- MAIN CONTENT -->
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
 
     <main class="main">
 
         <header class="main-header">
-            <h1>Talha Ahmad</h1>
+
+            <h1>
+                Talha Ahmad
+            </h1>
 
             <div class="profession">
                 Mechanical Engineering Student |
                 Technical & Teaching Skills
             </div>
+
         </header>
 
 
@@ -580,7 +605,9 @@
         <section class="section">
 
             <div class="section-heading">
-                <h2>Professional Summary</h2>
+                <h2>
+                    Professional Summary
+                </h2>
             </div>
 
             <p class="summary">
@@ -601,7 +628,9 @@
         <section class="section">
 
             <div class="section-heading">
-                <h2>Experience</h2>
+                <h2>
+                    Experience
+                </h2>
             </div>
 
             <div class="timeline-item">
@@ -609,6 +638,7 @@
                 <div class="item-header">
 
                     <div>
+
                         <div class="item-title">
                             Trainee Engineer
                         </div>
@@ -616,6 +646,7 @@
                         <div class="item-company">
                             PESCO — Peshawar Electric Supply Company Ltd
                         </div>
+
                     </div>
 
                     <div class="date">
@@ -625,6 +656,7 @@
                 </div>
 
                 <ul>
+
                     <li>
                         Gained practical exposure to 132kV/11kV
                         distribution systems.
@@ -639,6 +671,7 @@
                         Assisted in electrical system inspections
                         and maintenance tasks.
                     </li>
+
                 </ul>
 
             </div>
@@ -651,12 +684,15 @@
         <section class="section">
 
             <div class="section-heading">
-                <h2>Education</h2>
+                <h2>
+                    Education
+                </h2>
             </div>
 
             <div class="education-item">
 
                 <div>
+
                     <div class="degree">
                         BSc Mechanical Engineering
                     </div>
@@ -664,6 +700,7 @@
                     <div class="institution">
                         UET Peshawar
                     </div>
+
                 </div>
 
                 <div class="education-date">
@@ -676,6 +713,7 @@
             <div class="education-item">
 
                 <div>
+
                     <div class="degree">
                         Higher Secondary School Certificate (HSSC)
                     </div>
@@ -683,6 +721,7 @@
                     <div class="institution">
                         Quaid-e-Azam College Mardan
                     </div>
+
                 </div>
 
                 <div class="education-date">
@@ -695,6 +734,7 @@
             <div class="education-item">
 
                 <div>
+
                     <div class="degree">
                         Secondary School Certificate (SSC)
                     </div>
@@ -702,6 +742,7 @@
                     <div class="institution">
                         Sudhum Children Academy Rustam
                     </div>
+
                 </div>
 
                 <div class="education-date">
@@ -718,7 +759,9 @@
         <section class="section">
 
             <div class="section-heading">
-                <h2>Certification</h2>
+                <h2>
+                    Certification
+                </h2>
             </div>
 
             <div class="certification">
@@ -745,7 +788,9 @@
         <section class="section">
 
             <div class="section-heading">
-                <h2>Additional Skills</h2>
+                <h2>
+                    Additional Skills
+                </h2>
             </div>
 
             <p class="summary">
